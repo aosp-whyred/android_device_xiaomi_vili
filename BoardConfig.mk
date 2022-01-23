@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/haydn
+DEVICE_PATH := device/xiaomi/vili
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -63,15 +63,15 @@ BOARD_KERNEL_CMDLINE += androidboot.force_normal_boot=1
 BOARD_KERNEL_BASE := 0x014b96fc
 BOARD_KERNEL_PAGESIZE := 4096
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
 BOARD_BOOTIMG_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
-BOARD_KERNEL_IMAGE_NAME := kernel
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := haydn,haydn_in,haydnpro,missi
+TARGET_OTA_ASSERT_DEVICE := vili
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072

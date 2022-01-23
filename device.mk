@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/haydn
+LOCAL_PATH := device/xiaomi/vili
 
 # Dynamic Partitions
 BOARD_USE_DYNAMIC_PARTITIONS := true
@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 
 # Apex libraries
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/haydn/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+    $(OUT_DIR)/target/product/vili/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
 # Health
 PRODUCT_PACKAGES += \
